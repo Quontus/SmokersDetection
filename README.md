@@ -12,7 +12,8 @@ Training+inference for smokers detection
 ### Запуск обучения классификатора (инструкция в блокноте - XGBoost_vgg16_plus_dense121.ipynb)
 
 ### Запуск инференса каскада моделей (model_inference.py)
-В smokers.yaml указать пути к датасету
+Указать путь в файлу с изображениями - вход
+Словарь: {название файла: 1|0, 0 -не курят, 1 - курят}
   ```sh
-  python train.py
+  folder_with_img = r'C:\Users\79777\PycharmProjects\SmokersDetectionHack\dataset_upd\images\val'
   ```
