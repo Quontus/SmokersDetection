@@ -90,8 +90,7 @@ def decision_for_img(pred_dict, img, wrist_model, face_model):
 
 def predict_by_image(img_name: str, model):
 
-    pred_dict = {}
-    results = model.predict(img_path)
+    results = model.predict(img_name)
     pred_dict = []
     img = imread(img_name)
     # model.predict(img_path, imgsz=512, save=True, save_txt=True, save_conf=True)
