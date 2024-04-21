@@ -119,12 +119,12 @@ if __name__ == '__main__':
     face_model = xgboost.XGBClassifier()
     face_model.load_model(r'C:\Users\79777\PycharmProjects\SmokersDetectionHack\face_model_vgg16.json')
     wrist_model = xgboost.XGBClassifier()
-    wrist_model.load_model(r'C:\Users\79777\PycharmProjects\SmokersDetectionHack\wrist_model_densenet121.json')
+    wrist_model.load_model(r'C:\Users\gapan\Desktop\Py Projects\GITHUB HACKATHON\SmokersDetection\wrist_model_densenet121.json')
 
     model = YOLO(r'C:\Users\79777\PycharmProjects\SmokersDetectionHack\detection_model.pt')
     print('Модели загружены')
     total_dict = {}
-    folder_with_img = r'C:\Users\79777\PycharmProjects\SmokersDetectionHack\dataset_upd\images\val'
+    folder_with_img = r'C:\Users\gapan\Desktop\Py Projects\GITHUB HACKATHON\SmokersDetection\dataset_upd\images\val'
     for img_name in tqdm(os.listdir(folder_with_img)):
         img_path = os.path.join(folder_with_img, img_name)
         pred_dict = predict_by_image(img_path, model)[0]

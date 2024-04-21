@@ -1,7 +1,9 @@
 numpy
 opencv_python_headless
-skimage
+scikit-image
+scikit-learn
 tensorflow
 tqdm
 ultralytics
 xgboost
+main
