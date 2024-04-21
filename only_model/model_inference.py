@@ -7,7 +7,7 @@ import cv2
 import xgboost
 import tensorflow as tf
 import numpy as np
-from tqdm import tqdm
+from tqdm import tqdm   
 
 
 def get_conv(type: str):
