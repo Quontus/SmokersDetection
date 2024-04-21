@@ -1,0 +1,9 @@
+names:
+  0: "cigarette"
+  1: "person"
+  2: "smoke"
+  3: "person_face"
+
+path: C:\Users\79777\PycharmProjects\SmokersDetectionHack\dataset
+train: images/train
+val: images/val

@@ -1,0 +1,7 @@
+task: detect
+mode: train
+data: None
+epochs: 100
+patience: 10
+batch: 16
+imgsz: 640
